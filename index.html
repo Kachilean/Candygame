@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candy Smash - Match 3</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="tutorial-overlay">
+    <div class="tutorial">
+      <h1>Welcome to Candy Smash!</h1>
+      <p>Swap adjacent candies to match 3 or more of the same type.</p>
+      <p>Clear matches to earn points. Use power-ups wisely!</p>
+      <button id="startGameBtn">Start Playing</button>
+    </div>
+  </div>
+  <h1>Candy Smash</h1>
+  <div class="stats">
+    <div id="scoreDisplay">Score: 0</div>
+    <button id="rowClearBtn">Clear Row</button>
+    <button id="colClearBtn">Clear Column</button>
+    <button id="bombBtn">Bomb</button>
+  </div>
+  <div id="game"></div>
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
